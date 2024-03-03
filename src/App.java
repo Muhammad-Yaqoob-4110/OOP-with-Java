@@ -6,20 +6,27 @@ public class App {
         // user.sayHello();
 
 
-        // Interface: An interface is a contract that specifies the capabilities that a class shoud provide. With interfaces we can build loosely coupled applications
-        AhmedRazaShef ahmedRaza = getAhmedRazaShef();
-        ahmedRaza.ratting();
+        // // Interface: An interface is a contract that specifies the capabilities that a class shoud provide. With interfaces we can build loosely coupled applications
+        // AhmedRazaShef ahmedRaza = getAhmedRazaShef();
+        // ahmedRaza.ratting();
 
-        AliAhmedShef aliahmed = getAliAhmedShef();
-        aliahmed.ratting();
+        // AliAhmedShef aliahmed = getAliAhmedShef();
+        // aliahmed.ratting();
+
+        
+        // Encapsulation
+        var account = new Account();
+        account.deposit(50);
+        account.withdraw(30);
+        account.getBalance();
     }
 
-    // Interface
-    public static AhmedRazaShef getAhmedRazaShef(){
-        return new AhmedRazaShef();
-    }
+    // // Interface
+    // public static AhmedRazaShef getAhmedRazaShef(){
+    //     return new AhmedRazaShef();
+    // }
 
-    public static AliAhmedShef getAliAhmedShef(){
-        return new AliAhmedShef();
-    }
+    // public static AliAhmedShef getAliAhmedShef(){
+    //     return new AliAhmedShef();
+    // }
 }
