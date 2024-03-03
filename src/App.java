@@ -26,9 +26,15 @@ public class App {
         // mailService.sendEmail();
 
 
-        // Inheritance: is the mechanism that allows us to reuse code across our classes
-        var textBox = new TextBox();
-        textBox.enable();
+        // // Inheritance: is the mechanism that allows us to reuse code across our classes
+        // var textBox = new TextBox();
+        // textBox.enable();
+
+
+        // Polymorphism: poly mean many, morph mean form. Many forms: Ability of an object to take many forms
+        drawUiControl(new TextBox());
+        drawUiControl(new CheckBox());
+
 
     }
 
@@ -40,4 +46,10 @@ public class App {
     // public static AliAhmedShef getAliAhmedShef(){
     //     return new AliAhmedShef();
     // }
+
+
+    // Polymorphism
+    public static void drawUiControl(UiControl control){
+        control.draw();
+    }
 }
