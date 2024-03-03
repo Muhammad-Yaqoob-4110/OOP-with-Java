@@ -21,9 +21,14 @@ public class App {
         // account.getBalance();
 
 
-        // Abstraction: Reduce complexity by hiding unnecessary details
-        var mailService = new MailService();
-        mailService.sendEmail();
+        // // Abstraction: Reduce complexity by hiding unnecessary details
+        // var mailService = new MailService();
+        // mailService.sendEmail();
+
+
+        // Inheritance: is the mechanism that allows us to reuse code across our classes
+        var textBox = new TextBox();
+        textBox.enable();
 
     }
 
