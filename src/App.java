@@ -14,11 +14,17 @@ public class App {
         // aliahmed.ratting();
 
         
-        // Encapsulation
-        var account = new Account();
-        account.deposit(50);
-        account.withdraw(30);
-        account.getBalance();
+        // // Encapsulation
+        // var account = new Account();
+        // account.deposit(50);
+        // account.withdraw(30);
+        // account.getBalance();
+
+
+        // Abstraction: Reduce complexity by hiding unnecessary details
+        var mailService = new MailService();
+        mailService.sendEmail();
+
     }
 
     // // Interface
